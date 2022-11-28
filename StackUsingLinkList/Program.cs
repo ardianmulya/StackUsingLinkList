@@ -18,6 +18,7 @@ namespace StackUsingLinkList
     }
     class Stack
     {
+        node top;
 
     }
     class Program
