@@ -57,9 +57,6 @@ namespace StackUsingLinkList
                 }
             }
         }
-    }
-    class Program
-    {
         static void Main(string[] args)
         {
             Stack s = new Stack();
@@ -73,9 +70,36 @@ namespace StackUsingLinkList
                 Console.WriteLine("4. Exit");
                 Console.WriteLine("\n Enter your choice : ");
                 string input = Console.ReadLine();
-                char ch = Convert.ToChar(input==""?"o":input);
+                char ch = Convert.ToChar(input == "" ? "o" : input);
+                switch (ch)
+                {
+                    case '1':
+                        Console.Write("\n Enter a number ");
+                        int num = Convert.ToInt32(Console.ReadLine());
+                        s.push(num);
+                        break;
 
+                    case '2':
+                        if (s.empty())
+                        {
+                            Console.WriteLine("\nStack empty");
+                            break;
+                        }
+                        s.pop();
+                        break;
+
+                    case '3':
+                        s.display();
+                        break;
+
+                    case '4':
+                        return;
+
+                    default:
+                        Console.WriteLine("\n invalid choice");
+                        break;
+                }
             }
         }
-    }
+    }   
 }
