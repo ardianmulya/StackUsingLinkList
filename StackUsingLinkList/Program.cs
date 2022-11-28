@@ -19,7 +19,10 @@ namespace StackUsingLinkList
     class Stack
     {
         node top;
-
+        public Stack()
+        {
+            top = null;
+        }
     }
     class Program
     {
