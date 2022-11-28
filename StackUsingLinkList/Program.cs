@@ -39,6 +39,10 @@ namespace StackUsingLinkList
             top = fresh;
             Console.WriteLine("\n" + element + "pushed");
         }
+        public void pop()
+        {
+
+        }
     }
     class Program
     {
