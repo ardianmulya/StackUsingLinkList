@@ -44,6 +44,10 @@ namespace StackUsingLinkList
             Console.WriteLine("\n The poped elements is : " + top.info);
             top = top.next;
         }
+        public void display()
+        {
+
+        }
     }
     class Program
     {
