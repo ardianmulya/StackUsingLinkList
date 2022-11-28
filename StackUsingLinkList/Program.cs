@@ -32,7 +32,7 @@ namespace StackUsingLinkList
         }
         public void push(int element)
         {
-
+            node fresh;
         }
     }
     class Program
