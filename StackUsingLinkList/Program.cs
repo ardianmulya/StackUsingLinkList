@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace StackUsingLinkList
 {
-    internal class Program
+    class node
+    {
+        public int info;
+        public node next;
+        public node (int i,node n)
+        {
+            info = i;
+            next = n;
+        }
+    }
+
+    class Program
     {
         static void Main(string[] args)
         {
