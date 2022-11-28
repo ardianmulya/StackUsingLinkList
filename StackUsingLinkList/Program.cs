@@ -30,6 +30,10 @@ namespace StackUsingLinkList
             else
                 return (false);
         }
+        public void push(int element)
+        {
+
+        }
     }
     class Program
     {
